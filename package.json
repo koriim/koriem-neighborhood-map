@@ -1,7 +1,7 @@
 {
   "name": "koriem-neighborhood-map",
   "version": "0.0.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
