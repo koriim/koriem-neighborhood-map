@@ -1,6 +1,8 @@
 import { Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
+import MapStyleOptions from './json/MapStyleOptions.json';
+import * as fourSquareAPI from './APIs/fourSquareAPI.js';
 
 /**
 *Map Container is google maps and uses the google-maps-react library
