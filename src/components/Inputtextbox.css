@@ -20,7 +20,7 @@
      top: 16px;
      left: 0;
      font-size: 26px;
-     color: #FAA952;
+     color: rgb(82, 155, 250);
      font-weight: 500;
      transform-origin: 0 0;
      transition: all 0.2s ease;
@@ -33,7 +33,7 @@
      fill: none;
 }
  .inp svg path {
-     stroke: #FAA952;
+     stroke: rgb(243, 238, 233);
      stroke-width: 2;
 }
  .inp svg path d {
@@ -58,7 +58,7 @@
      font-weight: 500;
      background: none;
      border-radius: 0;
-     color: #FAA952;
+     color: rgb(41, 163, 201);
      transition: all 0.15s ease;
 }
  .inp input:not(:placeholder-shown) + span {
