@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import Mapcontainer from'./Mapcontainer.js';
-import Hamburger from'./Hamburger.js';
+import Hamburger from'./HamburgerMenu.js';
 
 import './css/Sidebarwithmap.css';
 import './css/Inputtextbox.css';
