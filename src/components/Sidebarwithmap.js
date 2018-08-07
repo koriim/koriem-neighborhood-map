@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import Mapcontainer from'./Mapcontainer.js';
 import Hamburger from'./HamburgerMenu.js';
 
-import './css/Sidebarwithmap.css';
-import './css/Inputtextbox.css';
+import './Sidebarwithmap.css';
+import './Inputtextbox.css';
 /**
 *Component that fits all UI's together, including side bar and google map.
 **/

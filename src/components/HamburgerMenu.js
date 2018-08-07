@@ -1,7 +1,7 @@
 /*Hamburger Menu Component*/
 import React from 'react';
 import PropTypes from "prop-types";
-import './css/HamburgerMenu.css';
+import './HamburgerMenu.css';
 
 
 function Hamburger(props) {
