@@ -5,20 +5,23 @@ import './App.css';
 
 class App extends Component {
 
+  state ={
+    places: [
+        {title: 'Giza Necropolis', location: {lat: 29.9772938, lng: 31.132376}},
+        {title: 'Salah eldin Citadel', location: {lat: 30.0298808, lng: 31.2610021}},
+        {title: 'Cairo Tower', location: {lat: 30.0458856, lng: 31.2241582}},
+        {title: 'Cairo Opera House', location: {lat: 30.0424869, lng: 31.2243129}},
+        {title: 'The Hanging Church', location: {lat: 30.0052951, lng: 31.2300362}},
 
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+    ]
+
+
   }
+
+  render(){
+    return(<Sidebarwithmap activeMarkers= {this.state.places}/>)
+   }
+
 }
 
 export default App;
