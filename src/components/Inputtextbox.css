@@ -1,0 +1,114 @@
+/*Used from https://freefrontend.com/css-input-text*/
+
+.searchbar {
+    font-family: 'Helvetica';
+    color: white !important;
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 20px !important;
+}
+
+ .inp {
+     position: relative;
+     margin: auto;
+     width: 100%;
+     max-width: 280px;
+     padding: 20px;
+}
+ .inp .label {
+     position: absolute;
+     top: 16px;
+     left: 0;
+     font-size: 26px;
+     color: #FAA952;
+     font-weight: 500;
+     transform-origin: 0 0;
+     transition: all 0.2s ease;
+}
+ .inp svg {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     height: 26px;
+     fill: none;
+}
+ .inp svg path {
+     stroke: #FAA952;
+     stroke-width: 2;
+}
+ .inp svg path d {
+     transition: all 0.2s ease;
+}
+ .inp .border {
+     position: absolute;
+     bottom: 0;
+     left: 120px;
+     height: 2px;
+     right: 0;
+     background: #FAA952;
+}
+ .inp input {
+     -webkit-appearance: none;
+     width: 100%;
+     border: 0;
+
+     padding: 12px 0;
+     height: 48px;
+     font-size: 16px;
+     font-weight: 500;
+     background: none;
+     border-radius: 0;
+     color: #FAA952;
+     transition: all 0.15s ease;
+}
+ .inp input:not(:placeholder-shown) + span {
+     color: #FAA952;
+     transform: translateY(-26px) scale(0.75);
+}
+ .inp input:focus {
+     background: none;
+     outline: none;
+}
+ .inp input:focus + span {
+     color: #FAA952;
+     transform: translateY(-26px) scale(0.75);
+     transition-delay: 0.1s;
+}
+ .inp input:focus + span + svg path {
+     stroke: #FAA952;
+     animation: elasticInput 0.4s ease forwards;
+}
+ .inp input:focus + span + svg + .border {
+     background: #FAA952;
+}
+ .dribbble {
+     position: fixed;
+     right: 20px;
+     bottom: 15px;
+     transition: all 0.2s ease;
+}
+ .dribbble span {
+     font-size: 28px;
+     color: #FAA952;
+}
+ @-moz-keyframes elasticInput {
+     50% {
+         d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+    }
+}
+ @-webkit-keyframes elasticInput {
+     50% {
+         d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+    }
+}
+ @-o-keyframes elasticInput {
+     50% {
+         d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+    }
+}
+ @keyframes elasticInput {
+     50% {
+         d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+    }
+}
+
