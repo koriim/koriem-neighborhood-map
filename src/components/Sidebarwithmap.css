@@ -6,7 +6,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #BE499E;
+    background-color: rgb(50, 51, 73);
     overflow-x: hidden;
     transition: 0.4s;
     font-size: 20px;
@@ -32,7 +32,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: #89ECE9;
+    background-color: rgb(8, 48, 46);
 }
 .mainheading {
     font-family: 'Arial Black';
@@ -47,7 +47,7 @@
     height: 95% !important;
 }
 .placediv :hover {
-    background-color: #B0368F;
+    background-color: rgb(61, 45, 117);
     cursor: pointer;
 }
 .sidelogo {
