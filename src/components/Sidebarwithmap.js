@@ -119,7 +119,7 @@ class Sidebarwithmap extends Component {
 							hamburgerClassName={this.state.hamburgerClassName}
 							hamburgerToggle = {this.hamburgerToggle}
 						/>
-						<h1 className={'mainheading'} tabIndex='1'>MOUNTAINS MAP</h1>
+						<h1 className={'mainheading'} tabIndex='1'>Cairo Historic Map</h1>
 					</div>
 					<div
 						className={'map-area'}
