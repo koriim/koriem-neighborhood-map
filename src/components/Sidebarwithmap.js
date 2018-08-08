@@ -17,7 +17,7 @@ class Sidebarwithmap extends Component {
 		query: '',
 		listItemSelected: '',
 		hamburgerArialabel: 'Hamburger Menu closed. Click to Open',
-		inputTabIndex: -12,
+		inputTabIndex: 1,
 
 	}
 
@@ -28,14 +28,14 @@ class Sidebarwithmap extends Component {
 				sideNavStyle: '270px',
 				hamburgerClassName: 'hamburger hamburger--minus is-active',
 				hamburgerArialabel: 'Hamburger Menu open. Click to Close',
-				inputTabIndex: -3,
+				inputTabIndex: 1
 			})
 		else
 			this.setState({
 				sideNavStyle: '0',
 				hamburgerClassName: 'hamburger hamburger--minus js-hamburger',
 				hamburgerArialabel: 'Hamburger Menu closed. Click to Open',
-				inputTabIndex: -12
+				inputTabIndex: 1
 			})
 	}
 	//Query what is written in the search bar and reset listitemselected to nothing
@@ -66,7 +66,7 @@ class Sidebarwithmap extends Component {
 			sideNavStyle:'0',
 			 hamburgerClassName:'hamburger hamburger--minus js-hamburger',
 			 hamburgerArialabel:'Hamburger Menu closed. Click to Open',
-			 inputTabIndex:-12,
+			 inputTabIndex:1
 		})
 	}
 	render() {
@@ -127,10 +127,10 @@ class Sidebarwithmap extends Component {
 						onTouchMove={this.onclickOrTouch}
 						role='application'
 						aria-label='Google Maps Internal Window'
-						tabIndex='-9'
+						tabIndex='1'
 					>
 						<Mapcontainer
-							tabIndex='-10'
+							tabIndex='1'
 							placesToDisplay={this.state.placesToDisplay}
 							placeSelected={this.state.listItemSelected}
 							selectPlace={(place) => {this.setState({listItemSelected: place})}}
