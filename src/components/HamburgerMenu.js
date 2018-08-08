@@ -8,7 +8,7 @@ function Hamburger(props) {
 	return(
 		<div id={"burgerContainer"}>
 			<button className={props.hamburgerClassName} tabIndex='2' type={"button"}  aria-label={props.hamburgerArialabel} >
-				<span className={"hamburger-box"}  onClick={props.hamburgerToggle}>
+				<span className={"hamburger-box"}  onClick={props.hamburgerToggle} onkeypress={props.hamburgerToggle}>
 		  			<span className={"hamburger-inner"}> </span>
 				</span>
 			</button>
