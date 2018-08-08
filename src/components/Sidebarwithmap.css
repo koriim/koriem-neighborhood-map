@@ -54,12 +54,6 @@
 .sidelogo {
    margin-top: 100px;
    margin-left: 65px;
-}
-
-@media screen and (min-width: 599px){
-    .sidelogo {
-        display: none;
-
-    }
+   min-width: 20px;
 }
 
