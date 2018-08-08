@@ -28,7 +28,7 @@ class Mapcontainer extends Component {
   }
   //Get information via squarespace API
   getFourSquareInfo = (lat,lng,name) => {
-    return fourSquareAPI.getSearchResult(lat, lng, name).then(venueId => {
+    return fourSquareAPI.getSearchResult(lat, lng, name).catch(venueId => {
       //If 'getSearchResult' API call returns an error
       if(venueId ==='error' )
         this.setState({
@@ -37,7 +37,7 @@ class Mapcontainer extends Component {
       });
       else {
         //If 'getDetails' API call returns an error
-        fourSquareAPI.getDetails(venueId).then(response => {
+        fourSquareAPI.getDetails(venueId).catch(response => {
           if(response === 'error' || response.meta.code !== 200)
             this.setState({
               likes: 'Error loading content',
