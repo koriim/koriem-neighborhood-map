@@ -12,14 +12,15 @@ Note: Make sure you have the latest Node.js installed.
 5. Open http://localhost:3000
 
 ## build the app
-#### Run 'npm run build'
-#### Builds the app for production to the build folder.
-#### It correctly bundles React in production mode and optimizes the build for the best performance.
+1. After installing the App.
+2. Run 'npm run build'.
+3. Builds the app for production to the build folder.
 
-#### The build is minified and the filenames include the hashes.
-#### By default, it also includes a service worker so that your app loads from local cache on future visits.
+* It correctly bundles React in production mode and optimizes the build for the best performance.
+* The build is minified and the filenames include the hashes.
+* By default, it also includes a service worker so that your app loads from local cache on future visits.
+* Your app is ready to be deployed.
 
-#### Your app is ready to be deployed.
 # How to Use the App
 1. The app will load a map of Egypt , historical places with markers for each attraction and a list of of these attractions in the sidebar.
 2. Click on a map marker or name of the attractions list to get details about the specific attraction.
