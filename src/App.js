@@ -7,7 +7,7 @@ class App extends Component {
 
   state ={
     places: [
-        {title: 'Giza Necropolis', location: {lat: 29.9772938, lng: 31.132376}},
+        {title: 'great-pyramids-of-giza', location: {lat: 29.9790857, lng: ,31.1344936}},
         {title: 'Salah eldin Citadel', location: {lat: 30.0298808, lng: 31.2610021}},
         {title: 'Cairo Tower', location: {lat: 30.0458856, lng: 31.2241582}},
         {title: 'Cairo Opera House', location: {lat: 30.0424869, lng: 31.2243129}},
