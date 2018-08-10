@@ -28,35 +28,28 @@ class Mapcontainer extends Component {
   }
   //Get information via squarespace API
   getFourSquareInfo = (lat,lng,name) => {
-    return fourSquareAPI.getSearchResult(lat, lng, name).catch(venueId => {
-      //If 'getSearchResult' API call returns an error
-      if(venueId ==='error' )
-        this.setState({
-        likes: 'Error loading Content',
-        photo: 'error'
-      });
-      else {
-        //If 'getDetails' API call returns an error
-        fourSquareAPI.getDetails(venueId).catch(response => {
-          if(response === 'error' || response.meta.code !== 200)
-            this.setState({
-              likes: 'Error loading content',
-              photo: 'error'
-            });
-          else{
-            if('likes' in response.response.venue)
-              this.setState({likes: response.response.venue.likes.summary});
-            else
-              this.setState({likes: 'Error loading content'});
-            if('bestPhoto' in response.response.venue)
-             this.setState({photo: response.response.venue.bestPhoto.prefix+'150'+response.response.venue.bestPhoto.suffix});
-            else
-              this.setState({photo:'error'});
-          }
+    return fourSquareAPI.getSearchResult(lat, lng, name).then(venueId => {
+        fourSquareAPI.getDetails(venueId).then(response => {
+            if(response === 'error' || response.meta.code !== 200)
+              this.setState({
+                likes: 'Error loading content',
+                photo: 'error'
+              });
+            else{
+              if('likes' in response.response.venue)
+                this.setState({likes: response.response.venue.likes.summary});
+              else
+                this.setState({likes: 'Error loading content'});
+              if('bestPhoto' in response.response.venue)
+               this.setState({photo: response.response.venue.bestPhoto.prefix+'150'+response.response.venue.bestPhoto.suffix});
+              else
+                this.setState({photo:'error'});
+            }
+          })
         })
       }
-    })
-  }
+
+
 
   //When used sets google maps to display all markers within the google maps container
   setBounds = () => {
