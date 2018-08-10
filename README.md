@@ -14,8 +14,13 @@ Note: Make sure you have the latest Node.js installed.
 ## build the app
 1. After installing the App.
 2. Run 'npm run build'.
-3. Builds the app for production to the build folder.
+3. Run 'install -g serve'.
+3. Run 'serve -s build'.
+5. You can serve the app now at.
+ - Local:            http://localhost:5000
+ - On Your Network:  http://192.168.43.180:5000
 
+* Builds the app for production to the build folder.
 * It correctly bundles React in production mode and optimizes the build for the best performance.
 * The build is minified and the filenames include the hashes.
 * By default, it also includes a service worker so that your app loads from local cache on future visits.
